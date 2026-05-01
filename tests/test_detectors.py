@@ -4,7 +4,6 @@ These tests do NOT require pytest in production; the launcher uses stdlib only.
 But pytest is convenient for development. The tests themselves use only stdlib
 unittest under the hood.
 """
-import os
 import sys
 import tempfile
 import unittest

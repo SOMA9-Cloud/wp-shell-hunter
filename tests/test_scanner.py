@@ -1,5 +1,4 @@
 """End-to-end scanner integration tests."""
-import os
 import sys
 import tempfile
 import unittest

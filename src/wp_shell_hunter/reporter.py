@@ -1,6 +1,5 @@
 """Report formatting: text and JSON output."""
 import json
-import sys
 from typing import List, TextIO
 
 from .finding import Finding, Severity

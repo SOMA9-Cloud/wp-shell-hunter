@@ -1,7 +1,7 @@
 """Detect attacker-created doubled directory pattern (foo/foo/, foo/foo/foo/)."""
 import re
 from pathlib import Path
-from typing import Optional, Set
+from typing import Optional
 
 from ..finding import Finding, Severity, Confidence
 

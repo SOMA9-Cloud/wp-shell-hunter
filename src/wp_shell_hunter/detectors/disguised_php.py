@@ -1,5 +1,4 @@
 """Detect PHP code inside files with media-style extensions."""
-import os
 from pathlib import Path
 from typing import Optional
 
