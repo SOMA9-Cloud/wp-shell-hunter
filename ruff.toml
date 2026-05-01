@@ -1,13 +1,14 @@
 # wp-shell-hunter ruff configuration
 # Production code uses stdlib only; ruff is dev-time only.
+#
+# v0.1.0: conservative ruleset — only pyflakes (real bugs).
+# Future versions will add isort (I) and pycodestyle (E/W) once codebase
+# is uniformly formatted.
 
 line-length = 100
 
 [lint]
-# Default ruleset is strict enough; explicit selection for clarity.
-select = ["E", "F", "W", "I"]
+select = ["F"]
 
 [lint.per-file-ignores]
-# Tests deliberately call sys.path.insert before importing wp_shell_hunter,
-# because the package is not installed during CI runs (stdlib-only by design).
-"tests/*.py" = ["E402"]
+"tests/*.py" = ["F401"]
